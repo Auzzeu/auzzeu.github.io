@@ -5,23 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Impressum – Rosendorn</title>
   <style>
+    :root { color-scheme: light dark; }
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; line-height: 1.6; }
     .wrap { max-width: 880px; margin: 0 auto; padding: 28px; }
-    header { margin-bottom: 18px; }
     a { color: inherit; }
     .box { padding: 16px; border: 1px solid rgba(127,127,127,0.35); border-radius: 12px; }
+    nav a { margin-right: 12px; }
     footer { margin-top: 32px; padding-top: 14px; border-top: 1px solid rgba(127,127,127,0.35); font-size: 0.95rem; opacity: 0.9; }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <h1>Impressum</h1>
-      <p><a href="index.html">← Zur Startseite</a></p>
-    </header>
+    <h1>Impressum</h1>
 
-    <div class="box">
+    <nav>
+      <a href="/">English</a>
+      <a href="/de/">Deutsch</a>
+      <a href="/datenschutz.html">Datenschutz</a>
+    </nav>
+
+    <div class="box" style="margin-top: 16px;">
       <p><strong>Angaben gemäß § 5 DDG und § 18 Abs. 1 MStV</strong></p>
+
       <p>
         <strong>Joshua Schulze-Reimpell</strong><br />
         1824 La Crosse Street<br />
@@ -29,10 +34,12 @@
         La Crosse, WI 54601<br />
         USA
       </p>
+
       <p>
         <strong>E-Mail:</strong>
         <a href="mailto:Joshua@Rosendorn.net">Joshua@Rosendorn.net</a>
       </p>
+
       <p>
         <strong>Hinweis zum Namen:</strong><br />
         Veröffentlichungen erfolgen unter dem Namen „Rosendorn“.
@@ -40,8 +47,13 @@
     </div>
 
     <footer>
-      <a href="datenschutz.html">Datenschutz</a>
+      <div>© <span id="y"></span> Rosendorn</div>
     </footer>
   </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
