@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Datenschutzerklärung – Rosendorn</title>
   <style>
+    :root { color-scheme: light dark; }
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; line-height: 1.6; }
     .wrap { max-width: 880px; margin: 0 auto; padding: 28px; }
     a { color: inherit; }
     h1, h2 { line-height: 1.25; }
     .meta { opacity: 0.85; }
     .box { padding: 16px; border: 1px solid rgba(127,127,127,0.35); border-radius: 12px; }
+    nav a { margin-right: 12px; }
     footer { margin-top: 32px; padding-top: 14px; border-top: 1px solid rgba(127,127,127,0.35); font-size: 0.95rem; opacity: 0.9; }
     ul { padding-left: 20px; }
   </style>
@@ -18,7 +20,14 @@
 <body>
   <div class="wrap">
     <h1>Datenschutzerklärung</h1>
-    <p class="meta"><a href="index.html">← Zur Startseite</a> · Stand: 20.01.2026</p>
+
+    <nav class="meta">
+      <a href="/">English</a>
+      <a href="/de/">Deutsch</a>
+      <a href="/impressum.html">Impressum</a>
+    </nav>
+
+    <p class="meta" style="margin-top: 10px;">Stand: 20.01.2026</p>
 
     <h2>1. Verantwortlicher</h2>
     <div class="box">
@@ -32,18 +41,15 @@
 
     <h2>2. Hosting über GitHub Pages</h2>
     <p>
-      Diese Website wird als statische Seite über <strong>GitHub Pages</strong> gehostet.
-      Beim Aufruf der Website wird laut GitHub die <strong>IP-Adresse</strong> der Besucher:innen
-      <strong>zu Sicherheitszwecken protokolliert und gespeichert</strong>.
-    </p>
-    <p>
-      Weitere Informationen finden Sie in der GitHub-Dokumentation sowie in der GitHub-Datenschutzerklärung.
+      Diese Website wird als statische Seite über <strong>GitHub Pages</strong> gehostet. Beim Aufruf der Website
+      können technische Zugriffsdaten verarbeitet werden (z. B. IP-Adresse, Datum/Uhrzeit, abgerufene Seite, User-Agent),
+      soweit dies für den Betrieb, die Sicherheit und die Bereitstellung der Website erforderlich ist.
     </p>
 
     <h2>3. Cookies</h2>
     <p>
-      GitHub setzt Cookies ein, u. a. um Websites bereitzustellen und abzusichern; je nach Kontext können auch
-      Analyse-Cookies verwendet werden. Details und Optionen finden Sie in den GitHub-Richtlinien.
+      Diese Website selbst setzt keine eigenen Cookies. Im Rahmen des Hostings können jedoch durch den Hosting-Anbieter
+      technisch notwendige Cookies eingesetzt werden (z. B. zur Sicherheit oder Bereitstellung).
     </p>
 
     <h2>4. Kontaktaufnahme per E-Mail</h2>
@@ -56,15 +62,12 @@
 
     <h2>5. Empfänger / Drittlandübermittlung</h2>
     <p>
-      Durch das Hosting über GitHub kann eine Verarbeitung von Daten in den USA oder anderen Ländern erfolgen.
-      GitHub beschreibt internationale Datenübermittlungen und die dabei genutzten Schutzmechanismen (z. B.
-      Standardvertragsklauseln und Data Privacy Framework) in der eigenen Datenschutzerklärung.
+      Durch das Hosting kann eine Verarbeitung von Daten in den USA oder anderen Ländern erfolgen. Informationen zu
+      internationalen Datenübermittlungen und Schutzmechanismen finden sich in den Angaben des Hosting-Anbieters.
     </p>
 
     <h2>6. Ihre Rechte</h2>
-    <p>
-      Soweit die DSGVO anwendbar ist, haben Sie insbesondere folgende Rechte:
-    </p>
+    <p>Soweit die DSGVO anwendbar ist, haben Sie insbesondere folgende Rechte:</p>
     <ul>
       <li>Auskunft über Ihre gespeicherten personenbezogenen Daten</li>
       <li>Berichtigung unrichtiger Daten</li>
@@ -75,14 +78,13 @@
     </ul>
 
     <footer>
-      <a href="impressum.html">Impressum</a>
+      <div>© <span id="y"></span> Rosendorn</div>
     </footer>
   </div>
 
-  <!-- Citations (for you as the site owner):
-       - GitHub Pages logs IP addresses: GitHub Docs "What is GitHub Pages?" Data collection section
-       - GitHub cookies: GitHub Cookies policy
-       - GitHub privacy statement (international transfers, etc.)
-       You don't need to include these citations on your website; they're for this chat response only. -->
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
