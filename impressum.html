@@ -1,60 +1,68 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Impressum – Rosendorn</title>
-  <style>
-    :root { color-scheme: light dark; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; line-height: 1.6; }
-    .wrap { max-width: 880px; margin: 0 auto; padding: 28px; }
-    a { color: inherit; }
-    .box { padding: 16px; border: 1px solid rgba(127,127,127,0.35); border-radius: 12px; }
-    nav a { margin-right: 12px; }
-    footer { margin-top: 32px; padding-top: 14px; border-top: 1px solid rgba(127,127,127,0.35); font-size: 0.95rem; opacity: 0.9; }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Impressum | Joshua T. S. Rosendorn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico" sizes="any">
 </head>
 <body>
-  <div class="wrap">
-    <h1>Impressum</h1>
 
-    <nav>
-      <a href="/">English</a>
-      <a href="/de/">Deutsch</a>
-      <a href="/datenschutz.html">Datenschutz</a>
-    </nav>
+<div class="container">
+    <header>
+        <h1>Joshua T. S. Rosendorn</h1>
+        <p class="subtitle">
+             Undergraduate Researcher / University of Wisconsin-La Crosse
+        </p>
+        
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="publications.html">Publications</a>
+            <a href="impressum.html" style="color:var(--accent-color);">Impressum</a>
+        </nav>
+    </header>
 
-    <div class="box" style="margin-top: 16px;">
-      <p><strong>Angaben gemäß § 5 DDG und § 18 Abs. 1 MStV</strong></p>
+    <main>
+        <h2>Impressum</h2>
+        
+        <div class="sidebar" style="text-align: left; margin-bottom: 20px;">
+            <p><strong>Angaben gemäß § 5 DDG und § 18 Abs. 1 MStV</strong></p>
 
-      <p>
-        <strong>Joshua Schulze-Reimpell</strong><br />
-        1824 La Crosse Street<br />
-        320D Reuter Hall<br />
-        La Crosse, WI 54601<br />
-        USA
-      </p>
+            <p>
+                <strong>Joshua Schulze-Reimpell</strong><br />
+                1824 La Crosse Street<br />
+                320D Reuter Hall<br />
+                La Crosse, WI 54601<br />
+                USA
+            </p>
 
-      <p>
-        <strong>E-Mail:</strong>
-        <a href="mailto:Joshua@Rosendorn.net">Joshua@Rosendorn.net</a>
-      </p>
+            <p>
+                <strong>E-Mail:</strong>
+                <a href="mailto:Joshua@Rosendorn.net">Joshua@Rosendorn.net</a>
+            </p>
 
-      <p>
-        <strong>Hinweis zum Namen:</strong><br />
-        Veröffentlichungen erfolgen unter dem Namen „Rosendorn“.
-      </p>
-    </div>
+            <p>
+                <strong>Hinweis zum Namen:</strong><br />
+                Veröffentlichungen erfolgen unter dem Namen „Rosendorn“.
+            </p>
+        </div>
+    </main>
 
     <footer>
-      <div>© <span id="y"></span> Rosendorn</div>
+        <nav>
+            <a href="index.html">English</a>
+            <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+        <div>
+            &copy; <span id="year"></span> Joshua T. S. Rosendorn
+        </div>
     </footer>
-  </div>
+</div>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
-
