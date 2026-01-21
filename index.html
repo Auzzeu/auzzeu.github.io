@@ -1,61 +1,76 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Joshua T. S. Rosendorn</title>
-  <meta name="description" content="Professional profile site of Joshua T. S. Schulze-Reimpell (publishing as Joshua T. S. Rosendorn)." />
-  <style>
-    :root { color-scheme: light dark; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; line-height: 1.6; }
-    .wrap { max-width: 880px; margin: 0 auto; padding: 28px; }
-    header { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
-    img { width: 140px; height: 140px; border-radius: 999px; object-fit: cover; }
-    h1 { margin: 0; font-size: 2rem; }
-    .subtitle { margin: 6px 0 0; opacity: 0.8; }
-    main { margin-top: 18px; }
-    footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid rgba(127,127,127,0.35); font-size: 0.95rem; opacity: 0.9; }
-    a { color: inherit; }
-    nav a { margin-right: 12px; }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Joshua T. S. Rosendorn | Researcher</title>
+    <meta name="description" content="Academic profile of Joshua T. S. Rosendorn, Undergraduate Researcher in Cognitive Psychology and Behavioral Economics." />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico" sizes="any">
 </head>
 <body>
-  <div class="wrap">
+
+<div class="container">
     <header>
-      <img src="me.jpg" alt="Portrait of Joshua Schulze-Reimpell" />
-      <div>
         <h1>Joshua T. S. Rosendorn</h1>
-        <p class="subtitle">Joshua Schulze-Reimpell · Research / Publications (in preparation)</p>
-      </div>
+        <p class="subtitle">
+            Undergraduate Researcher / <a href="https://www.uwlax.edu" target="_blank">University of Wisconsin-La Crosse</a> / Cognitive Psychology / Behavioral Economics / Philosophy
+        </p>
+        
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="publications.html">Publications</a>
+            <a href="https://orcid.org/0009-0000-5066-6327" target="_blank">ORCID</a>
+            <a href="https://osf.io/user/nur4x" target="_blank">OSF</a>
+            <a href="https://www.youtube.com/@JoshuaRosendorn" target="_blank">Youtube</a>
+        </nav>
     </header>
 
-    <main>
-      <p>
-        Welcome! This is my professional profile site. Once I have publications, I’ll list them here.
-      </p>
+    <main class="profile-grid">
+        <div class="content">
+            <h2>Bio</h2>
+            <p>
+                My name is Joshua T. S. Rosendorn, and I’m an undergraduate student at the University of Wisconsin–La Crosse (<a href="https://www.uwlax.edu" target="_blank">UWL</a>), double-majoring in Psychology and Philosophy with a minor in Neuroscience. I earned my Abitur (secondary school degree) from the Reuchlin Gymnasium Ingolstadt (Germany) in 2022.
+            </p>
+            <p>
+                At UWL, I work on research projects in cognitive and decision-making psychology as well as behavioral economics, with interests spanning perception, judgment and choice, information processing (particularly in terms of thought), and philosophy of mind. I currently serve as a <strong>Menard Family Initiative (MFI) Research Fellow</strong> (<a href="https://www.uwlax.edu/center/menard-family-initiative/mfi-student-engagement/research-fellowship/" target="_blank">link</a>) and collaborate on multiple ongoing projects.
+            </p>
+            <p>
+                Outside the lab, I’m committed to building thoughtful campus communities. I’m the <strong>Vice President of the UWL Philosophy Club</strong> (<a href="https://uwlmyorgs.campuslabs.com/engage/organization/uwlphilosophyclub/" target="_blank">link</a>) and I run <strong>Bridging the Divide</strong> (<a href="https://www.uwlax.edu/center/menard-family-initiative/mfi-student-engagement/bridging-the-divide/" target="_blank">link</a>) at UWL, a discussion series designed to foster respectful, productive dialogue across political differences. Finally, for over two years, I have served as a tutor for psychology and philosophy at the Tutoring & Learning Center at UWL.
+            </p>
 
-      <p>
-        Contact: <a href="mailto:Joshua@Rosendorn.net">Joshua@Rosendorn.net</a>
-      </p>
+            <div class="gallery">
+                <img src="MFI.png" alt="Joshua Rosendorn presenting research poster">
+                <img src="FWI.jpg" alt="Joshua Rosendorn at Fluid-Weight Illusion poster">
+                <img src="FWI2.jpg" alt="Discussing research at a conference">
+            </div>
+        </div>
 
-      <p>
-        <strong>Publications:</strong> <em>None yet.</em>
-      </p>
+        <aside class="sidebar">
+            <img src="me.jpg" alt="Portrait of Joshua T. S. Rosendorn" class="profile-img">
+            <div class="contact-info">
+                <p><strong>Contact</strong></p>
+                <p>For inquiries and questions please contact me at:</p>
+                <p><a href="mailto:Joshua@Rosendorn.net">Joshua@Rosendorn.net</a></p>
+            </div>
+        </aside>
     </main>
 
     <footer>
-      <nav>
-        <a href="/de/">Deutsch</a>
-        <a href="/impressum.html">Impressum</a>
-        <a href="/datenschutz.html">Datenschutz</a>
-      </nav>
-      <div>© <span id="y"></span> Rosendorn</div>
+        <nav>
+            <a href="/de/index.html">Deutsch</a> 
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+        <div>
+            &copy; <span id="year"></span> Joshua T. S. Rosendorn
+        </div>
     </footer>
-  </div>
+</div>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
